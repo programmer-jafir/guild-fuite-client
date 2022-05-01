@@ -13,11 +13,11 @@ const Banner = () => {
             <p>Would you like millions of new customers to enjoy your amazing food and groceries? So would we!
 It's simple: we list your menu and product lists online, help you process orders, pick them up, and deliver them to hungry pandas – in a heartbeat!
 Interested? Let's start our partnership today!</p>
-            <a className='btn btn-first' href="#">Like Video</a>
-            <a className='btn btn-second' href="#">Subscribe</a>
+            <a className='btn button btn-first' href="#">Like Video</a>
+            <a className='btn button btn-second' href="#">Subscribe</a>
           </div>       
         <div className="col-sm-6">
-          <img src={banner} alt="" className='w-100'/>
+          <img src={banner} alt="" className='img-fluid'/>
         </div>
       </div>
     </div>

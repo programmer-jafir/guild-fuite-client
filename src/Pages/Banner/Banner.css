@@ -7,7 +7,7 @@
     margin: 20px 0;
     color: darkorange;
 }
-a.btn{
+a.button{
     margin: 30px 10px;
     width: 150px;
     padding: 10px;
@@ -22,7 +22,7 @@ a.btn-second{
     border: 1px solid darkorange;
     color: #333;
 }
-a.btn:hover{
+a.button:hover{
     background-color: darkorange;
     border: none;
     color: #fff;

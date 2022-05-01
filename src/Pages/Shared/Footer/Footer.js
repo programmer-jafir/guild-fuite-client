@@ -60,7 +60,7 @@ const Footer = () => {
                 <hr className='mb-4' />
                 <div className='row align-items-center'>
                     <div className="col-md-7 col-lg-8 inline-block">
-                        <p className='d-inline-block'> Copyright @ 2022 All rigts reserveed by:</p>
+                        <p className='d-inline-block'> Copyright &copy; 2022 All rigts reserveed by:</p>
                         <a className='text-decoration-none' href="#">
                             <strong className='text-warning'>&nbsp;Guild Fruite</strong>
                         </a>

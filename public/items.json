@@ -1,0 +1,84 @@
+
+[
+    {
+        "id": 1,
+        "name": "Strawberry",
+        "price": "300",
+        "quantity": "1",
+        "supplier": "Will Smith",
+        "description": "The garden strawberry  is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit. The fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness. It is consumed in large quantities, either fresh or in such prepared foods as jam, juice",
+        "img": "https://i.ibb.co/8xF91Hp/New-Project-9.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Raspberries",
+        "price": "100",
+        "quantity": "1",
+        "supplier": "Chris Rock",
+        "description": "A raspberry is an aggregate fruit, developing from the numerous distinct carpels of a single flower. What distinguishes the raspberry from its blackberry relatives is whether or not the torus (receptacle or stem) 'picks with' (i.e., stays with) the fruit. When picking a blackberry fruit, the torus stays with the fruit. With a raspberry, the torus remains on the plant, leaving a hollow core in the raspberry fruit.",
+        "img": "https://i.ibb.co/tX6QyJz/New-Project-11.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Berry",
+        "price": "150",
+        "quantity": "1",
+        "supplier": "Dwayne Rock",
+        "description": "A berry is a small, pulpy, and often edible fruit. Typically, berries are juicy, rounded, brightly colored, sweet, sour or tart, and do not have a stone or pit, although many pips or seeds may be present. Common examples are strawberries, raspberries, blueberries, blackberries, red currants, white currants and blackcurrants. In Britain, soft fruit is a horticultural term for such fruits.",
+        "img": "https://i.ibb.co/gTrdywV/New-Project-13.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Red Tomato",
+        "price": "180",
+        "quantity": "1",
+        "supplier": "Ronaldo",
+        "description": "The tomato is consumed in diverse ways, including raw, as an ingredient in many dishes, sauces, salads, and drinks. While it is botanically a fruit, it is considered a vegetable for culinary purposes. The fruit is rich in lycopene, which may have beneficial health effects.",
+        "img": "https://i.ibb.co/3S3HtQ0/New-Project-10.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Green Grapes",
+        "price": "100",
+        "quantity": "1",
+        "supplier": "Stachy Jhonson",
+        "description": "Crunchy, sweet and juicy, green seedless grapes satisfy a multitude of cravings, which may be why everyone like them so much. With 104 calories per 1-cup serving, green grapes make a healthy and natural low-calorie snack. The 1-cup serving of green grapes fills you up and satisfies hunger. ",
+        "img": "https://i.ibb.co/FbHg35r/New-Project-14.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Malta",
+        "price": "300",
+        "quantity": "1",
+        "supplier": "Geri Baroy",
+        "description": "Malta, a variety of orange, is a popular citrus fruit cultivated in hot climate. The fruit is rich in mineral salts and other ingredients of nutritive value such as iron, lime, phosphorus, and vital minerals. Malta is loaded with vitamin C and vitamin B complex.",
+        "img": "https://i.ibb.co/qRz2WVJ/New-Project-15.jpg"
+    },
+    {
+        "id": 7,
+        "name": "China Fuji Apple",
+        "price": "300",
+        "quantity": "1",
+        "supplier": "Smith Tom",
+        "description": "Apples are some of the most popular and delicious fruits on the planet. There are more than 7,500 varieties of this delicious fruit. China Fuji Apple is one of them. Fuji apples are typically round and range from large to very large, averaging 75 mm in diameter.",
+        "img": "https://i.ibb.co/CQ9rXy3/New-Project-12.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Banana Chompa",
+        "price": "300",
+        "quantity": "1",
+        "supplier": "Ronaldo Baroy",
+        "description": "Banana is the most popular fresh fruit in all over the world. It has lots of variety. Chompa Banana is one of them. Chompa Bananas are comparatively smaller than the normal bananas. Bananas are great super food which provides us with energy.",
+        "img": "https://i.ibb.co/CB48r1C/New-Project-16.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Watermelon",
+        "price": "70",
+        "quantity": "1",
+        "supplier": "Jhonson Tom",
+        "description": "Watermelon is grown in favorable climates from tropical to temperate regions worldwide for its large edible fruit, which is a berry with a hard rind and no internal divisions. The sweet, juicy flesh is usually deep red to pink, with many black seeds, although seedless varieties exist.",
+        "img": "https://i.ibb.co/44S1PZh/New-Project-17.jpg"
+    }
+]
