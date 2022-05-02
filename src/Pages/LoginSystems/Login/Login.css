@@ -29,13 +29,15 @@ form{
     border-radius: 10px;
 }
 input[type="email"],
-input[type="password"]{
+input[type="password"],
+input[type="confirm password"]{
     background-color: #1a2226;
     border-radius: 10px;
     margin-bottom: 25px;
 }
 input[type="email"]:focus,
-input[type="password"]:focus{
+input[type="password"]:focus,
+input[type="confirm password"]:focus{
     outline: none;
     border: none;
     background-color: #1a2226;
