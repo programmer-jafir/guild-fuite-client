@@ -6,6 +6,7 @@ import Blog from './Pages/Blog/Blog';
 import Contact from './Pages/Contact/Contact';
 import Footer from './Pages/Shared/Footer/Footer';
 import Items from './Pages/Items/Items';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/items' element={<Items/>}/>
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='*' element={<NotFound/>}/>
       </Routes>
       <Footer></Footer>
     </div>
