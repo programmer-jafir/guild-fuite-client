@@ -13,7 +13,7 @@ const Items = () => {
         <div>
             <h1 className='text-center text-warning mt-5 mp-5'>Items</h1>
             <div className='container mb-5'>
-                <div className="card-group ms-5">
+                <div className="row ms-5">
                 {
                     items.map(item=><Item
                     key={item.id}

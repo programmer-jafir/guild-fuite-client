@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Banner from '../Banner/Banner';
 import Contact from '../Contact/Contact';
 import Item from '../Item/Item';
@@ -21,12 +22,15 @@ const Home = () => {
             <div className='container mb-5'>
                 <div className="row ms-5">
                 {
-                    items.map(item=><Item
+                    items.slice(0, 6).map(item=><Item
                     key={item.id}
                     item={item}
                     >
                     </Item>)
                 }      
+                </div>
+                <div className='d-flex justify-content-center mt-5'>
+                <Link to='/items' className='btn btn-warning text-white'>  See more</Link>
                 </div>
             </div>
             <Contact/>
