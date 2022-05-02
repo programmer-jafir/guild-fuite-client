@@ -4,7 +4,7 @@ import { Accordion } from 'react-bootstrap';
 const Blog = () => {
     return (
         <div>
-            <h1 className='mt-5 mb-3'>QA Section</h1>
+            <h1 className='mt-5 mb-3 text-center'>QA Section</h1>
             <Accordion>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Difference between javascript and node js?</Accordion.Header>
