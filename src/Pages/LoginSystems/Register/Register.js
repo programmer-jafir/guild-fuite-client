@@ -1,32 +1,57 @@
 import React, { useRef } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import auth from '../../../firebase.init'
 import './Register.css'
 import '../Login/Login.css'
+import { async } from '@firebase/util';
+import Loading from '../../Shared/Loading/Loading';
 
 const Register = () => {
+    const NameRef = useRef('');
   const EmailRef = useRef('');
   const PasswordRef = useRef('');
+  const navigate = useNavigate();
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
+      const [updateProfile, updating, UpdateError] = useUpdateProfile(auth);
 
-      const navagate = useNavigate();
+      let errormassage;
+    if (error) {
+        errormassage = <div>
+            <p className='text-danger'>Error: {error?.message}</p>
+          </div>
+      }
+
+      if(loading){
+        return <Loading/>
+    }
 
       const navigateLogin = () => {
-          navagate('/login')
+        navigate('/login')
       }
-      const handleRegister = event =>{
+      const handleRegister = async (event) =>{
           event.preventDefault();
+          const name = NameRef.current.value;
           const email = EmailRef.current.value;
           const password = PasswordRef.current.value;
-          createUserWithEmailAndPassword(email, password);
+          await createUserWithEmailAndPassword(email, password);
+          await updateProfile({ displayName: name});
+          console.log('Updated profile');
+          navigate('/home');
+
+          const password1 = document.getElementById("Password").value;
+          const ConfirmPassword = document.getElementById("Confirm Password").value;
+
+          if(password1 !== ConfirmPassword){
+            document.getElementById('massage').innerHTML ="Password are not match"
+          }
       }
     return (
       <div className='form-body'>
@@ -38,7 +63,7 @@ const Register = () => {
               <form onSubmit={handleRegister} action="" className='m-3'>
                   <div className="form-group">
                       <label htmlFor="Name">Name</label>
-                      <input type="name" name="name" className='form-control form-control-sm' id="Name" />
+                      <input ref={NameRef} type="name" name="name" className='form-control form-control-sm' id="Name" />
                   </div>
                   <div className="form-group">
                       <label htmlFor="Email">Email Address</label>
@@ -50,7 +75,7 @@ const Register = () => {
                   </div>
                   <div className="form-group">
                       <label htmlFor="Confirm Password">Confirm Password</label>
-                      <input type="confirm password" name="confirm password" className='form-control form-control-sm' id="Confirm Password" />
+                      <input type="password" name="confirm password" className='form-control form-control-sm' id="Confirm Password" />
                   </div>
                   <button type='submit' className=' btn form-btn btn-primary btn-block'>
                       Sign Up
@@ -59,6 +84,8 @@ const Register = () => {
                       <p> Arleady have an account? <Link to='/login' className='pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
                   </div>
                   </form>
+                  <p id = 'massage' className='text-danger text-center'></p>
+                  <p className='text-center'>{errormassage}</p>
               <h6 className='text-center'>Or</h6>
               <SocialLogin/>
           </div>

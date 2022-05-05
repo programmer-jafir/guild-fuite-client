@@ -18,7 +18,7 @@ const Home = () => {
         <div>
             <Banner/>
 
-            <h1 className='text-center text-warning mt-5 mp-5'>Items</h1>
+            <h1 className='text-center text-warning mt-5 mp-5'>Inventory</h1>
             <div className='container mb-5'>
                 <div className="row ms-5">
                 {
@@ -30,7 +30,7 @@ const Home = () => {
                 }      
                 </div>
                 <div className='d-flex justify-content-center mt-5'>
-                <Link to='/items' className='btn btn-warning text-white'>  See more</Link>
+                <Link to='/inventory' className='btn btn-warning text-white'>  See more</Link>
                 </div>
             </div>
             <Contact/>

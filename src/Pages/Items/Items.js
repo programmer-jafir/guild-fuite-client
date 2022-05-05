@@ -11,7 +11,7 @@ const Items = () => {
     }, [])
     return (
         <div>
-            <h1 className='text-center text-warning mt-5 mp-5'>Items</h1>
+            <h1 className='text-center text-warning mt-5 mp-5'>Inventory</h1>
             <div className='container mb-5'>
                 <div className="row ms-5">
                 {

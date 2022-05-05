@@ -53,32 +53,5 @@
         "supplier": "Geri Baroy",
         "description": "Malta, a variety of orange, is a popular citrus fruit cultivated in hot climate. The fruit is rich in mineral salts and other ingredients of nutritive value such as iron, lime, phosphorus, and vital minerals. Malta is loaded with vitamin C and vitamin B complex.",
         "img": "https://i.ibb.co/qRz2WVJ/New-Project-15.jpg"
-    },
-    {
-        "id": 7,
-        "name": "China Fuji Apple",
-        "price": "300",
-        "quantity": "1",
-        "supplier": "Smith Tom",
-        "description": "Apples are some of the most popular and delicious fruits on the planet. There are more than 7,500 varieties of this delicious fruit. China Fuji Apple is one of them. Fuji apples are typically round and range from large to very large, averaging 75 mm in diameter.",
-        "img": "https://i.ibb.co/CQ9rXy3/New-Project-12.jpg"
-    },
-    {
-        "id": 8,
-        "name": "Banana Chompa",
-        "price": "300",
-        "quantity": "1",
-        "supplier": "Ronaldo Baroy",
-        "description": "Banana is the most popular fresh fruit in all over the world. It has lots of variety. Chompa Banana is one of them. Chompa Bananas are comparatively smaller than the normal bananas. Bananas are great super food which provides us with energy.",
-        "img": "https://i.ibb.co/CB48r1C/New-Project-16.jpg"
-    },
-    {
-        "id": 9,
-        "name": "Watermelon",
-        "price": "70",
-        "quantity": "1",
-        "supplier": "Jhonson Tom",
-        "description": "Watermelon is grown in favorable climates from tropical to temperate regions worldwide for its large edible fruit, which is a berry with a hard rind and no internal divisions. The sweet, juicy flesh is usually deep red to pink, with many black seeds, although seedless varieties exist.",
-        "img": "https://i.ibb.co/44S1PZh/New-Project-17.jpg"
     }
 ]
