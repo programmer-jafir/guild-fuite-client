@@ -28,6 +28,7 @@ form{
     background: #1a2226;
     border-radius: 10px;
 }
+input[type="name"],
 input[type="email"],
 input[type="password"],
 input[type="confirm password"]{
@@ -35,6 +36,7 @@ input[type="confirm password"]{
     border-radius: 10px;
     margin-bottom: 25px;
 }
+input[type="name"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="confirm password"]:focus{
