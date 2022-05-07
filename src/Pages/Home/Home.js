@@ -1,18 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import useItems from '../../hooks/useItems';
 import Banner from '../Banner/Banner';
 import Contact from '../Contact/Contact';
 import Item from '../Item/Item';
 import Items from '../Items/Items';
 
 const Home = () => {
-    const [items, setItems] = useState([]);
-
-    useEffect(() =>{
-        fetch('http://localhost:5000/item')
-        .then(res => res.json())
-        .then(data => setItems(data));
-    }, [])
+    const [items] = useItems();
 
     return (
         <div>
@@ -30,7 +25,7 @@ const Home = () => {
                 }      
                 </div>
                 <div className='d-flex justify-content-center mt-5'>
-                <Link to='/inventory' className='btn btn-warning text-white'>  See more</Link>
+                <Link to='/manage-inventories' className='btn btn-dark text-white'>  Manage Inventories</Link>
                 </div>
             </div>
             <Contact/>

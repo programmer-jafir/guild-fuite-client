@@ -1,9 +1,9 @@
 import React  from 'react';
 import useItems from '../../hooks/useItems';
-import Item from '../Item/Item';
-import ManageInventories from '../ManageInventorie/ManageInventorie';
+import ManageInventorie from '../ManageInventorie/ManageInventorie';
+// import ManageInventories from '../ManageInventorie/ManageInventorie';
 
-const Items = () => {
+const ManageInventories = () => {
     const [items] = useItems();
     return (
         <div>
@@ -11,10 +11,10 @@ const Items = () => {
             <div className='container mb-5'>
                 <div className="row ms-5">
                     {
-                        items.map(item => <Item
+                        items.map(item => <ManageInventorie
                             key={item._id}
                             item={item}
-                        ></Item>)
+                        ></ManageInventorie>)
                     }
                 </div>
             </div>
@@ -22,4 +22,4 @@ const Items = () => {
     );
 };
 
-export default Items;
+export default ManageInventories;

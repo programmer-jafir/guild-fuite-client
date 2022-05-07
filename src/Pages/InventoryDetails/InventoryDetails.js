@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+// import useItems from '../../hooks/useItems';
 
 const InventoryDetails = () => {
     const {id} = useParams();
-    const [item, setItem] = useState({});
+    const [items, setItems] = useState({});
 
-    const {name, img, description, price, quantity, supplier}= item;
-
-    useEffect( () =>{
-        const url = `http://localhost:5000/item/${id}`
-        
+    useEffect(() => {
+      const url = `http://localhost:5000/item/${id}`;
         fetch(url)
-        .then(res => res.json())
-        .then(data => setItem(data));
-    })
+            .then(res => res.json())
+            .then(data => setItems(data));
+    }, [])
+
+    const {name, img, description, price, quantity, supplier}= items;
+
     return (
         <div className='col-sm-12 col-md-6 col-lg-4 py-3'>
         <div className="card box-shadow" style={{width: "18rem"}}>
@@ -30,5 +31,4 @@ const InventoryDetails = () => {
         </div>
     );
 };
-
 export default InventoryDetails;
