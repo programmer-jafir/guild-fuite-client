@@ -17,7 +17,7 @@ const MyItem = ({item}) => {
             }
         })
       }
-    }
+      }
     return (
         <div className='col-sm-12 col-md-6 col-lg-4 py-3'>
         <div className="card box-shadow" style={{width: "18rem"}}>
