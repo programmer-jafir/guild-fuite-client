@@ -47,7 +47,7 @@ const Login = () => {
     }
 
     const navigateRegister = event =>{
-        navigate('/register');
+        navigate('/registation');
     }
 
     const resetPassword = async() =>{
@@ -74,14 +74,13 @@ const Login = () => {
                         </div>
                         <div className="form-group">
                             <label htmlFor="Password">Password</label>
-                            <a href="#" className='forget'>Forget Password</a>
                             <input ref={PasswordRef} type="password" name="password" className='form-control form-control-sm' id="Password" required/>
                         </div>
                         <button type='submit' className='btn form-btn btn-primary btn-block'>
                             Sign In
                         </button>
                         <div className="signup">
-                            <p> Dont have an account? <Link to='/register' className='pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
+                            <p> Dont have an account? <Link to='/registation' className='pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
                             <p> Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
                         </div>
                     </form>
