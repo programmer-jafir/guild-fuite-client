@@ -15,6 +15,7 @@ import AddItem from './Pages/AddItem/AddItem';
 import ManageInventories from './Pages/ManageInventories/ManageInventories';
 import MyItems from './Pages/MyItems/MyItems';
 import { ToastContainer } from 'react-toastify';
+import AboutUs from './Pages/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         }/>
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/aboutus' element={<AboutUs/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/registation' element={<Register/>}/>
         <Route path='*' element={<NotFound/>}/>

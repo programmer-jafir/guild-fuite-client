@@ -38,7 +38,7 @@ const Login = () => {
     }
 
     if (user) {
-
+        navigate(from, { replace: true });
     }
     const handleSubmit = async event => {
         event.preventDefault();
@@ -47,7 +47,6 @@ const Login = () => {
         await signInWithEmailAndPassword(email, password);
         const { data } = await axios.post('https://murmuring-spire-17460.herokuapp.com/login', { email })
         localStorage.setItem('accessToken', data.accessToken);
-        navigate(from, { replace: true });
     }
 
     const navigateRegister = event => {

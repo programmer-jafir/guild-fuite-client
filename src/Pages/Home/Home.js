@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import useItems from '../../hooks/useItems';
+import AboutUs from '../AboutUs/AboutUs';
 import Banner from '../Banner/Banner';
 import Contact from '../Contact/Contact';
 import Item from '../Item/Item';
@@ -40,6 +41,7 @@ const Home = () => {
                     <Link to='/manage-inventories' className='btn btn-dark text-white'>  Manage Inventories</Link>
                 </div>
             </div>
+            <AboutUs></AboutUs>
             <Contact />
         </div>
     );
