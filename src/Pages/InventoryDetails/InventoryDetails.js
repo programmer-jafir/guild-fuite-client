@@ -11,12 +11,36 @@ const InventoryDetails = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setItems(data));
-    }, [])
+    }, []);
+
+    const UpdateQuantity = event => {
+      event.preventDefault();
+      const quantity = event.target.quantity.value;
+
+      const updateQuantity = {quantity};
+
+      // send data to backend
+      const url = `http://localhost:5000/item/${id}`;
+      fetch(url,{
+        method: 'PUT',
+        headers: {
+          'content-type': 'application/json'
+        },
+        body: JSON.stringify(updateQuantity)
+      })
+      .item(res => res.json())
+      .then(data =>{
+        console.log('sucess', data);
+        alert('');
+        event.target.reset();
+      })
+    }
+
 
     const {name, img, description, price, quantity, supplier}= items;
 
     return (
-        <div className='col-sm-12 col-md-6 col-lg-4 py-3'>
+        <div className='col-sm-12 col-md-6 col-lg-4 py-3 mx-auto'>
         <div className="card box-shadow" style={{width: "18rem"}}>
   <img src={img} className="card-img-top" alt="..."/>
   <div className="card-body">
@@ -26,6 +50,10 @@ const InventoryDetails = () => {
     <h6 className="card-title">Supplier: {supplier}</h6>
     <p className="card-text">{description}</p>
     <button className="btn btn-success">Delivered</button>
+    <form onSubmit={UpdateQuantity}>
+    <input type="number" name="quantity" placeholder='quantity' id="quantity" />
+      <input type="submit" value="Quentity" />
+    </form>
   </div>
 </div>
         </div>

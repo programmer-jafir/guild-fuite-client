@@ -5,7 +5,7 @@ import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css'
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
     const emailRef = useRef('');
@@ -88,7 +88,7 @@ const Login = () => {
                     {errormassage}
                     <h6 className='text-center'>Or</h6>
                     <SocialLogin/>
-                    <ToastContainer />
+                    
                 </div>
             </div>
             </div>

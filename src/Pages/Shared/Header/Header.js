@@ -24,7 +24,7 @@ const Header = () => {
               <Nav.Link as={Link} to="home">Home</Nav.Link>
               {/* <Nav.Link as={Link} to="inventory">Inventory</Nav.Link> */}
               {/* <Nav.Link href="home#about">About</Nav.Link> */}
-              <Nav.Link href="home#contact">Contact us</Nav.Link>
+              <Nav.Link href="home#AskQuestion">Ask Question</Nav.Link>
               <Nav.Link as={Link} to="blog">Blog</Nav.Link>
             </Nav>
             <Nav>
@@ -33,7 +33,7 @@ const Header = () => {
                 <>
                 <Nav.Link as={Link} to="manage-inventories">Manage Inventories</Nav.Link>
                 <Nav.Link as={Link} to="additem">Add Item</Nav.Link>
-                <Nav.Link as={Link} to="login">My items</Nav.Link>
+                <Nav.Link as={Link} to="my-items">My items</Nav.Link>
                 <button onClick={handleSignOut} className='btn btn-link text-white text-decoration-none'>Logout</button>
                 </>
                 :

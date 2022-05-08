@@ -7,8 +7,8 @@ const useItems = () => {
         fetch('http://localhost:5000/item')
             .then(res => res.json())
             .then(data => setItems(data));
-    }, [])
-    return [items]
+    }, [items])
+    return [items, setItems];
 };
 
 export default useItems;

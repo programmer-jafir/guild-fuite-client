@@ -4,11 +4,22 @@ import useItems from '../../hooks/useItems';
 import Banner from '../Banner/Banner';
 import Contact from '../Contact/Contact';
 import Item from '../Item/Item';
-import Items from '../Items/Items';
+import ManageInventorie from '../ManageInventorie/ManageInventorie';
 
 const Home = () => {
-    const [items] = useItems();
+    // const [items] = useItems();
+    const [items, setItems] = useState([]);
+    const [quantity, setQuentity] = useState(0);
 
+    useEffect(() => {
+        fetch('http://localhost:5000/item')
+            .then(res => res.json())
+            .then(data => setItems(data));
+    }, [items])
+
+    const updateQuantity =() =>{
+        console.log('clicked');
+    }
     return (
         <div>
             <Banner/>
@@ -20,6 +31,7 @@ const Home = () => {
                     items.slice(0, 6).map(item=><Item
                     key={item.id}
                     item={item}
+                    updateQuantity={updateQuantity}
                     >
                     </Item>)
                 }      

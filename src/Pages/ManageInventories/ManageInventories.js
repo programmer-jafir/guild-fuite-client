@@ -1,4 +1,5 @@
 import React  from 'react';
+import { Link } from 'react-router-dom';
 import useItems from '../../hooks/useItems';
 import ManageInventorie from '../ManageInventorie/ManageInventorie';
 // import ManageInventories from '../ManageInventorie/ManageInventorie';
@@ -16,6 +17,9 @@ const ManageInventories = () => {
                             item={item}
                         ></ManageInventorie>)
                     }
+                </div>
+                <div className='d-flex justify-content-center mt-5'>
+                <Link to='/additem' className='btn btn-dark text-white'>  Add new item</Link>
                 </div>
             </div>
         </div>
