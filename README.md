@@ -1,10 +1,10 @@
 # Getting Started with warehouse-management-website
 
-This project was create with react bootstrap it is [warehouse-management-website](https://warehouse-management-web-c9c72.web.app/).
+This project was create with react bootstrap it is [Guild FUITE](https://warehouse-management-web-c9c72.web.app/).
 
 ## Other Url
 
-* This project server site code link [warehouse-management-website-server](https://github.com/programmer-jafir/guild-fuite-server).
+* This project server site code link [Guild-FUITE-server](https://github.com/programmer-jafir/guild-fuite-server).
 
 
 ### Website info:
