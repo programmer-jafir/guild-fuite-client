@@ -4,9 +4,8 @@ This project was create with react bootstrap it is [warehouse-management-website
 
 ## Other Url
 
-* This project server site code link [warehouse-management-website-server](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-programmer-jafir/).
+* This project server site code link [warehouse-management-website-server](https://github.com/programmer-jafir/guild-fuite-server).
 
-* This project client site code link [warehouse-management-website-client](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-programmer-jafir).
 
 ### Website info:
 This is a were house management website. In this website you can add your item.Then when your stock out you can delete item. If you want to delete item go to manage inventory page. In this website you can get more extea functionality. 
